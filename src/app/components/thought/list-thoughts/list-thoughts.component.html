@@ -5,10 +5,16 @@
   </header>
 </section>
 
-<div class="mural">
+<div class="mural" *ngIf="listThought.length > 0; else semPensamentos">
   <!-- Componente Pai -->
   <div *ngFor="let thought of listThought">
     <!-- Componente Filho -->
     <app-thought-card [thought]="thought"></app-thought-card>
   </div>
 </div>
+
+<ng-template #semPensamentos>
+  <div class="ff-inter sem-pensamentos">
+    <p>Opa ! Ainda não há pensamentos</p>
+  </div>
+</ng-template>
