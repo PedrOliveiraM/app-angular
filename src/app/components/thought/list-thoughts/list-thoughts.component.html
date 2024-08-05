@@ -4,3 +4,11 @@
     <button routerLink="/createThought" class="botao">Add thought</button>
   </header>
 </section>
+
+<div class="mural">
+  <!-- Componente Pai -->
+  <div *ngFor="let thought of listThought">
+    <!-- Componente Filho -->
+    <app-thought-card [thought]="thought"></app-thought-card>
+  </div>
+</div>
