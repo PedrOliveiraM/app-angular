@@ -1,4 +1,7 @@
-<div class="pensamento">
+<div
+  class="pensamento {{ thought.modelo }} ff-roboto-mono"
+  [ngClass]="widthThought()"
+>
   <img src="/assets/Imagens/{{ thought.modelo }}.png" alt="Aspas" />
   <p class="conteudo">{{ thought.conteudo }}</p>
   <p class="autoria">

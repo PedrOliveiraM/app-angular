@@ -1,9 +1,10 @@
+import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-thought-card',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './thought-card.component.html',
   styleUrl: './thought-card.component.css',
 })
@@ -14,4 +15,12 @@ export class ThoughtCardComponent {
     autoria: 'Pedro',
     modelo: 'modelo1',
   };
+
+  widthThought(): string {
+    if (this.thought.conteudo.length >= 256) {
+      return 'pensamento-g';
+    } else {
+      return 'pensamento-p';
+    }
+  }
 }

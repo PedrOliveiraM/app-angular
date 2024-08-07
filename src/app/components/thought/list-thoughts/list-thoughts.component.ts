@@ -24,5 +24,16 @@ export class ListThoughtsComponent {
       autoria: 'hastag treinamentos',
       modelo: 'modelo3',
     },
+    {
+      id: '3',
+      conteudo: `Commercial License Usage
+** Licensees holding valid commercial Qt licenses may use this file in
+** accordance with the commercial license agreement provided with the
+** Software or, alternatively, in accordance with the terms contained in
+** a written agreement between you and The Qt Company. For licensing terms
+`,
+      autoria: 'Tester',
+      modelo: 'modelo1',
+    },
   ];
 }
